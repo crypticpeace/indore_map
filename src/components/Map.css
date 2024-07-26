@@ -1,0 +1,20 @@
+.map-container {
+    
+    position: absolute;
+    width: 50%;
+    height: 0;
+    padding-bottom: 75%; /* Adjust this value to match your map's aspect ratio */
+    background-color: #f0f0f0; /* Optional: background color for the container */
+  }
+  
+  .region-image {
+    position: absolute;
+    height: auto;
+    transition: filter 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .region-image:hover,
+  .region-image.hovered {
+    filter: brightness(1.2) saturate(1.2);
+  }
